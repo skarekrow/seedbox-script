@@ -1224,12 +1224,12 @@ fi)
 	ServerName localhost
 	DocumentRoot $WWW_ROOT
 
-	<Directory />
+	<Directory /rutorrent/>
 		AllowOverride None
 		Order deny,allow
 		Deny from all
 	</Directory>
-	<Location />
+	<Location /rutorrent/>
 		AuthType Basic
 		AuthName "$RUTORRENT_SITE_REALM"
 		AuthUserFile "$WWW_PASSWORD_FILE"
